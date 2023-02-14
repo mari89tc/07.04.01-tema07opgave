@@ -59,17 +59,19 @@ nav:hover {
   background-color: black;
   height: 600px;
   width: 1400px;
+  margin: 2rem;
 }
 
 .threeproducts {
   justify-content: center;
   display: flex;
-  width: 100%;
   background-color: antiquewhite;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .hvemervi {
+  margin: 20px;
   background-color: aqua;
   max-width: 65ch;
-  width: 600px;
 }
