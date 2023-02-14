@@ -57,16 +57,21 @@ nav:hover {
   color: white;
 }
 
-h2 {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 30px;
-  border-bottom: 1px solid;
-  color: #874e39;
+.frontimage {
+  background-color: black;
+  height: 600px;
+  width: 1400px;
 }
 
-a{
-  text-decoration: none;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+.threeproducts {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.hvemervi {
+  background-color: aqua;
+  max-width: 65ch;
+  width: 600px;
 }
