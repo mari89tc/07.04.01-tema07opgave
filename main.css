@@ -5,7 +5,7 @@ main {
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-section{
+section {
   width: 1400px;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ nav {
   border-radius: 5%;
   justify-content: center;
 }
-.image_box{
+.image_box {
   background-color: rgb(254, 244, 244);
   display: flex;
   justify-content: center;
@@ -44,7 +44,6 @@ nav {
 .logo {
   height: 50px;
 }
-
 
 #aheader {
   color: #874e39;
@@ -68,7 +67,7 @@ nav:hover {
 }
 
 .frontimage {
-  background-color: black;
+  background-color: #a1b795;
   height: 600px;
   width: 1400px;
   margin: 2rem;
@@ -87,13 +86,13 @@ nav:hover {
   background-color: aqua;
   max-width: 65ch;
 }
-h2{
+h2 {
   font-size: 30px;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   border-bottom: 1px solid;
   color: #874e39;
 }
-a{
+a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
