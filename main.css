@@ -81,10 +81,13 @@ nav:hover {
   box-sizing: border-box;
 }
 
-.hvemervi {
+.hvemervitekst {
   margin: 20px;
-  background-color: aqua;
   max-width: 65ch;
+}
+.hvemervi {
+  margin-top: 3rem;
+  width: 100%;
 }
 h2 {
   font-size: 30px;
