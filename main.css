@@ -4,6 +4,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   box-sizing: border-box;
+  background-color: antiquewhite;
 }
 section {
   width: 1400px;
@@ -63,7 +64,7 @@ nav {
 }
 
 nav:hover {
-  color: white;
+  color: rgb(128, 119, 119);
 }
 
 .frontimage {
@@ -89,6 +90,7 @@ nav:hover {
   margin-top: 3rem;
   width: 100%;
 }
+
 h2 {
   font-size: 30px;
   font-family: "Abril Fatface", cursive;

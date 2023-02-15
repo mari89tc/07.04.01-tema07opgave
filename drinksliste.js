@@ -1,6 +1,11 @@
-fetch("")
-  .then((res) => res.json())
-  .then(showProducts);
+fetch("someurl", {
+  method: "get",
+  headers: {
+    "x-apikey": "your-cors-api-key",
+  },
+})
+  .then((e) => e.json())
+  .then(showProduct);
 
 function showProducts(products) {
   products.forEach(showProduct);
@@ -11,7 +16,7 @@ function showProduct(product) {
 
   const copy = template.cloneNode(true);
 
-  copy.querySelector("#productname").textContent = product.productdisplayname;
+  copy.querySelector("#drinkname").textContent = product.productdisplayname;
   copy.querySelector(".card .image").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
 
