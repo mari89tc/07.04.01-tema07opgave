@@ -1,0 +1,103 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+section {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f5c8b7;
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.image {
+  background-color: rgb(254, 244, 244);
+  height: 300px;
+  border-radius: 5%;
+  justify-content: center;
+}
+.image_box {
+  background-color: rgb(254, 244, 244);
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+#aheader {
+  color: #874e39;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+#aheader:hover {
+  color: rgb(144, 72, 72);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+nav:hover {
+  color: white;
+}
+
+.frontimage {
+  background-color: #a1b795;
+  height: 600px;
+  width: 1400px;
+  margin: 2rem;
+}
+
+.threeproducts {
+  justify-content: center;
+  display: flex;
+  background-color: antiquewhite;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.hvemervitekst {
+  margin: 20px;
+  max-width: 65ch;
+}
+.hvemervi {
+  margin-top: 3rem;
+  width: 100%;
+}
+h2 {
+  font-size: 30px;
+  font-family: "Abril Fatface", cursive;
+  border-bottom: 1px solid;
+  color: #874e39;
+}
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
