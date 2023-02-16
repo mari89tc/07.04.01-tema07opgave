@@ -66,11 +66,13 @@ nav:hover {
 }
 
 .frontimage {
-  background-color: #a1b795;
-  height: 600px;
+  background-image: url("/img_forside/img_forside1.webp");
+  object-fit: cover;
+  height: 500px;
   width: 1400px;
   margin: 2rem;
 }
+
 .resp_img {
   width: 100%;
   max-width: 900px;
