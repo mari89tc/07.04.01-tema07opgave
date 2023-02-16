@@ -106,3 +106,13 @@ a {
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.drinksgrid1_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f8f6b1;
+}
+
+.drinksstruktur {
+  display: block;
+}
