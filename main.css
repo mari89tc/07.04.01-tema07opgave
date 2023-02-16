@@ -4,7 +4,6 @@ main {
   align-items: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  background-color: antiquewhite;
 }
 section {
   width: 1400px;
@@ -20,6 +19,13 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #f5c8b7;
+  padding: 20px;
+  margin-bottom: 3rem;
 }
 
 .card {
@@ -77,7 +83,6 @@ nav:hover {
 .threeproducts {
   justify-content: center;
   display: flex;
-  background-color: antiquewhite;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
