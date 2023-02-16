@@ -72,6 +72,11 @@ nav:hover {
   width: 1400px;
   margin: 2rem;
 }
+.resp_img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
 
 .threeproducts {
   justify-content: center;
@@ -86,7 +91,6 @@ nav:hover {
   max-width: 65ch;
 }
 .hvemervi {
-  font-size: x-large;
   margin-top: 3rem;
   width: 100%;
 }
