@@ -6,7 +6,6 @@ main {
   box-sizing: border-box;
 }
 section {
-  width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +78,7 @@ nav:hover {
 }
 
 .threeproducts {
+  width: 1400px;
   justify-content: center;
   display: flex;
   background-color: antiquewhite;
