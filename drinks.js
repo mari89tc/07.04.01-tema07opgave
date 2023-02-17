@@ -10,8 +10,7 @@ fetch("someurl", {
   .then((e) => e.json())
   .then(showProduct);
 
-function showProduct(product) {
-  console.log("product " + product);
+function showProduct(drink) {
   document.querySelector(".description2 h2").textContent = product.brandname + ", " + product.productdisplayname;
   // document.querySelector(".description2 p").textContent = product.description;
   document.querySelector(".description2 .price").textContent = product.price;

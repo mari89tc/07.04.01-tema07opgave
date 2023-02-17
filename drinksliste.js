@@ -1,24 +1,24 @@
-fetch("someurl", {
+fetch("https://tipsy-7609.restdb.io/rest/tipsy", {
   method: "get",
   headers: {
-    "x-apikey": "your-cors-api-key",
+    "x-apikey": "63ee14b6478852088da68351",
   },
 })
-  .then((e) => e.json())
-  .then(showProduct);
-
-function showProducts(products) {
-  products.forEach(showProduct);
-}
+  .then((res) => res.json())
+  .then(showProducts);
 
 function showProduct(product) {
   const template = document.querySelector("#tipsytemplate").content;
 
   const copy = template.cloneNode(true);
 
-  copy.querySelector("#drinkname").textContent = product.productdisplayname;
-  copy.querySelector(".card .image").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
+  copy.querySelector(".drinkname").textContent = tipsy.name;
+  copy.querySelector(".strenght").textContent = "Styrke : " + tipsy.strenght + "/5";
+  copy.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
+
+  copy.querySelector(".image").src = tipsy.image;
+
+  // copy.querySelector(".read-more").setAttribute("href", `tipsy.html?id=${tipsy.id}`);
 
   //   if (product.discount) {
   //     var originalPrice = product.price;
