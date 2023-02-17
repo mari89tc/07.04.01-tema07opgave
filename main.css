@@ -213,6 +213,48 @@ form {
 h1 {
   font-family: "Amatic SC", cursive;
 }
+
 p {
   font-family: "Quicksand", sans-serif;
+}
+
+.drinksstruktur ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.drinksstruktur ul li {
+  display: block;
+  padding: 8px 40px 8px 0;
+  border-bottom: 1px solid #ccc;
+  align-items: left;
+}
+span {
+  float: left;
+}
+
+.drinksstruktur h2 {
+  font-size: 50px;
+  font-family: "Amatic SC";
+  color: #874e39;
+  margin-left: 5em;
+  margin-bottom: 0;
+  margin-right: 5em;
+}
+
+.drinksstruktur h5 {
+  margin-left: 0em;
+}
+
+.drinksstruktur h1 {
+  font-size: 30px;
+  font-family: "Amatic SC";
+  color: #874e39;
+  margin-left: 1.5em;
+}
+
+.drinksstruktur p {
+  font-family: "Quicksand", sans-serif;
+  max-width: 65ch;
+  margin: 3em;
 }
