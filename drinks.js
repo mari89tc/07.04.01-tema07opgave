@@ -12,7 +12,10 @@ fetch("https://tipsy-7609.restdb.io/rest/tipsy", {
 
 function showProduct(tipsy) {
   document.querySelector(".drinkname").textContent = tipsy.name;
+  document.querySelector(".liquor").textContent = "Sprit " + tipsy.liquor;
+  document.querySelector(".taste").textContent = "Smag " + tipsy.taste;
   document.querySelector(".strenght").textContent = "Styrke : " + tipsy.strenght + "/5";
   document.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
+  document.querySelector(".recipe").textContent = tipsy.recipe;
   document.querySelector(".image").src = tipsy.image;
 }
