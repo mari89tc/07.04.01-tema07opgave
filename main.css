@@ -17,9 +17,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
 }
-
+header {
+  position: sticky;
+  top: 0;
+  padding: 25px;
+  margin-bottom: 3rem;
+  background-color: white;
+  border-bottom: 1px solid;
+}
 .card {
   background-color: #f5c8b7;
   width: 300px;
@@ -45,13 +51,14 @@ nav {
 }
 
 #aheader {
-  color: #874e39;
+  color: #a1b795;
   text-decoration: none;
   font-size: 18px;
-  margin-left: 20px;
+  margin-right: 100px;
   font-weight: 600;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #aheader:hover {
@@ -83,7 +90,6 @@ nav:hover {
   width: 1400px;
   justify-content: center;
   display: flex;
-  background-color: antiquewhite;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
@@ -96,6 +102,7 @@ nav:hover {
   margin-top: 3rem;
   width: 100%;
 }
+
 h2 {
   font-size: 30px;
   font-family: "Abril Fatface", cursive;
