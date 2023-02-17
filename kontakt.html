@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
     <meta name="robots" content="noindex" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -18,29 +20,38 @@
         </div>
       </nav>
     </header>
-    <div class="form_kontakt">
-      <h3>Hvad er din yndlingsdrink?</h3>
-      <form name="kontakt" netlify>
-        <div>
-          <label for="navn"><br />Navn<br /></label>
-          <input id="navn" type="text" name="fname" />
-        </div>
-        <div>
-          <label for="tel"><br />Telefonnummer<br /></label>
-          <input id="tel" type="tel" name="Tlf. nummer" />
-        </div>
-        <div>
-          <label for="email"><br />Email<br /></label>
-          <input id="email" type="text" name="email" />
-        </div>
-        <div>
-          <label>
-            <br />Kom med forslag til din yndlingsdrink her<br />
-            <textarea id="besked" name="besked" rows="10" cols="30"></textarea>
-          </label>
-        </div>
-        <button class="button">Indsend</button>
-      </form>
-    </div>
+    <section class="grid_1_1">
+      <div class="om_os">
+        <h3>Hvem er vi?</h3>
+        <p>
+          Tipsy er formet ud af kærlighed til smagfulde og farverige drinks, der forsøder tilværelsen. Vores mål er at inspirere dig, når du går i gang med shakeren, så dine drinks når et nyt niveau. Vi arbejder hele tiden på at forbedre vores
+          indhold, så alle idéer og ønsker til opskrifter, tages imod med stor glæde.
+        </p>
+      </div>
+      <div class="form_kontakt">
+        <h3>Hvad er din yndlingsdrink?</h3>
+        <form name="kontakt">
+          <div>
+            <label for="navn"><br />Navn<br /></label>
+            <input id="navn" type="text" name="fname" />
+          </div>
+          <div>
+            <label for="tel"><br />Telefonnummer<br /></label>
+            <input id="tel" type="tel" name="Tlf. nummer" />
+          </div>
+          <div>
+            <label for="email"><br />Email<br /></label>
+            <input id="email" type="text" name="email" />
+          </div>
+          <div>
+            <label>
+              <br />Kom med forslag til din yndlingsdrink her<br />
+              <textarea id="besked" name="besked" rows="10" cols="30"></textarea>
+            </label>
+          </div>
+          <button class="button">Indsend</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

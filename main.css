@@ -131,6 +131,23 @@ a {
 }
 
 /* Form */
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 30px;
+  margin-top: 40px;
+}
+.om_os h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+.om_os p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
 .form_kontakt {
   display: block;
   justify-content: center;
@@ -138,7 +155,7 @@ a {
 }
 .form_kontakt h3 {
   color: #f45d49;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 25px;
   text-decoration: none;
@@ -167,14 +184,14 @@ form {
 
   label {
     color: #f45d49;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
     font-size: 15px;
     text-decoration: none;
   }
   form button {
     background-color: #fdfcd2;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
     font-size: 15px;
     padding: 15px;
