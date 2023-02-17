@@ -5,6 +5,10 @@ main {
   flex-wrap: wrap;
   box-sizing: border-box;
 }
+body {
+  background-color: #ffffff;
+  margin: 0px;
+}
 section {
   display: flex;
   justify-content: center;
@@ -23,7 +27,7 @@ header {
   top: 0;
   padding: 25px;
   margin-bottom: 3rem;
-  background-color: white;
+  background-color: #ffffff;
   border-bottom: 1px solid;
 }
 .card {
@@ -47,7 +51,7 @@ header {
 }
 
 .logo {
-  height: 100px;
+  height: 90px;
 }
 
 #aheader {
@@ -58,7 +62,7 @@ header {
   font-weight: 600;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 #aheader:hover {
@@ -105,7 +109,7 @@ nav:hover {
 
 h2 {
   font-size: 30px;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Amatic SC", cursive;
   border-bottom: 1px solid;
   color: #874e39;
 }
@@ -113,7 +117,7 @@ a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .drinksgrid1_2 {
@@ -124,4 +128,11 @@ a {
 
 .drinksstruktur {
   display: block;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
+}
+p {
+  font-family: "Quicksand", sans-serif;
 }
