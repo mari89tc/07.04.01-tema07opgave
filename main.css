@@ -49,6 +49,16 @@ header {
   display: flex;
   justify-content: center;
 }
+.image2 {
+  height: 400px;
+  border-radius: 5%;
+  justify-content: center;
+}
+.image_box2 {
+  display: flex;
+  justify-content: center;
+}
+
 
 .logo {
   height: 90px;
@@ -251,10 +261,13 @@ span {
   font-family: "Amatic SC";
   color: #874e39;
   margin-left: 1.5em;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .drinksstruktur p {
   font-family: "Quicksand", sans-serif;
   max-width: 65ch;
-  margin: 3em;
+  margin: 3rem;
+  margin-top: 1rem;
 }
