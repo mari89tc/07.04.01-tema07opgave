@@ -22,7 +22,7 @@ function showProduct(tipsy) {
 
   copy.querySelector(".image").src = tipsy.image;
 
-  // copy.querySelector(".read-more").setAttribute("href", `tipsy.html?id=${tipsy.id}`);
+  copy.querySelector(".read-more").setAttribute("href", `drinks.html?_id=${tipsy._id}`);
 
   //   //   if (product.discount) {
   //   //     var originalPrice = product.price;
