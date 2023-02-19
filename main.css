@@ -44,6 +44,13 @@ header {
   border-radius: 5%;
   justify-content: center;
 }
+.image-bigger {
+  background-color: rgb(254, 244, 244);
+  height: 600px;
+  width: 400px;
+  border-radius: 5%;
+  justify-content: center;
+}
 .image_box {
   background-color: rgb(254, 244, 244);
   display: flex;

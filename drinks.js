@@ -47,7 +47,7 @@ function showProducts(tipsy) {
   document.querySelector(".strenght").textContent = "Styrke : " + tipsy.strenght + "/5";
   document.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
   document.querySelector(".recipe").textContent = tipsy.recipe;
-  document.querySelector(".image").src = tipsy.image;
+  document.querySelector(".image-bigger").src = tipsy.image;
 
   // if (Array.isArray(tipsy.ingredienser)) {
   //   ingredienser(tipsy.ingredienser);
