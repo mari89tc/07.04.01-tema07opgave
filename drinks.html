@@ -27,12 +27,12 @@
 
   <main>
     <section class="drinksgrid1_2">
-      <div class="image_box2">
-        <img class="image2" src="drink_test.svg" alt="">
+      <div class="image_box">
+        <img class="image-bigger" src="drink_test.svg" alt="">
       </div>
 
       <div class="drinksstruktur">
-        <h2 id="drinkname">Pina Colada</h2>
+        <h2 class="drinkname">Pina Colada</h2>
         <h5 class="liquor"> Sprit: gin </h5>
         <h5 class="taste"> smag: sød </h5>
         <h5 class="strenght"> styrke 4/5 </h5>
@@ -44,15 +44,16 @@
           blanditiis
           architecto tenetur aut praesentium reprehenderit, inventore provident non minima. Ex vitae reprehenderit
           maxime impedit odio!</p>
-
-        <ul>
-          <li class="ingrediens">Lemon juice<span class="amount"> 2 oz</span></li>
-          <li>Sugar<span> 1 tsp</span></li>
-          <li>Water<span> 1/4 cup</span></li>
-          <li>Mint leaves<span> 10 leaves</span></li>
-          <li>Ginger ale<span> 6 oz</span></li>
-          <li>Cranberry juice<span> 2 oz</span></li>
-        </ul>
+        <template>
+          <ul class="allingrediens">
+            <li class="ingrediens">Lemon juice<span class="amount"> 2 oz</span></li>
+            <!-- <li class="">Sugar<span> 1 tsp</span></li> -->
+            <!-- <li>Water<span> 1/4 cup</span></li>
+            <li>Mint leaves<span> 10 leaves</span></li>
+            <li>Ginger ale<span> 6 oz</span></li>
+            <li>Cranberry juice<span> 2 oz</span></li> -->
+          </ul>
+        </template>
       </div>
     </section>
   </main>
@@ -77,7 +78,7 @@
     <h5>All rights reserved</h5>
     <h5>2023</h5>
   </footer>
-  <script src="drinksliste.js"></script>
+  <script src="drinks.js"></script>
 </body>
 
 </html>

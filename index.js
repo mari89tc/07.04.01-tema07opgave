@@ -1,4 +1,4 @@
-fetch("https://tipsy-7609.restdb.io/rest/tipsy", {
+fetch("https://tipsy-7609.restdb.io/rest/tipsy?max=3", {
   method: "get",
   headers: {
     "x-apikey": "63ee14b6478852088da68351",
@@ -23,18 +23,5 @@ function showProduct(tipsy) {
   copy.querySelector(".image").src = tipsy.image;
 
   copy.querySelector(".read-more").setAttribute("href", `drinks.html?_id=${tipsy._id}`);
-
-  //   //   if (product.discount) {
-  //   //     var originalPrice = product.price;
-  //   //     var discountPercentage = product.discount;
-  //   //     var newprice = originalPrice * (discountPercentage / 100);
-  //   //     copy.querySelector("#newprice").textContent = newprice + " kr" + " " + discountPercentage + "% off";
-  //   //     copy.querySelector("#price").remove("");
-  //   //   }
-
-  //   //   if (product.soldout) {
-  //   //     copy.querySelector("section").classList.add("soldOut");
-  //   //   }
-
-  document.querySelector("main").appendChild(copy);
+  document.querySelector("main section").appendChild(copy);
 }
