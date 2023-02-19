@@ -56,6 +56,16 @@ header {
   display: flex;
   justify-content: center;
 }
+.image2 {
+  height: 400px;
+  border-radius: 5%;
+  justify-content: center;
+}
+.image_box2 {
+  display: flex;
+  justify-content: center;
+}
+
 
 .logo {
   height: 90px;
@@ -138,23 +148,21 @@ a {
 }
 
 /* Form */
-.grid_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin: 30px;
-  margin-top: 40px;
-}
 .om_os h3 {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 30px;
-}
-.om_os p {
+    color: #f45d49;
+  }
+
+.om_os p, h3 {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  margin: 2rem;
+  line-height: 30px;
 }
+
 .form_kontakt {
   display: block;
   justify-content: center;
@@ -168,7 +176,7 @@ a {
   text-decoration: none;
 }
 form {
-  width: 70%;
+  width: 180%;
 }
 @media (min-width: 700px) {
   input[type="text"],
@@ -179,6 +187,15 @@ form {
     border-radius: 40px;
     width: 50%;
     padding: 12px;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin: 30px;
+    margin-top: 40px;
+    align-items: stretch;
   }
   #besked {
     border: 0.5px solid lightgrey;
@@ -251,10 +268,13 @@ span {
   font-family: "Amatic SC";
   color: #874e39;
   margin-left: 1.5em;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .drinksstruktur p {
   font-family: "Quicksand", sans-serif;
   max-width: 65ch;
-  margin: 3em;
+  margin: 3rem;
+  margin-top: 1rem;
 }
