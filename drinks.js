@@ -16,7 +16,7 @@ function showProducts(tipsy) {
   document.querySelector(".liquor").textContent = tipsy.liquor;
   document.querySelector(".taste").textContent = tipsy.taste;
   document.querySelector(".strenght").textContent = "Styrke : " + tipsy.strenght + "/5";
-  document.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
+  document.querySelector(".difficulty").textContent = "Sværhedsgrad : " + tipsy.difficulty + "/5";
   document.querySelector(".recipe").textContent = tipsy.recipe + " hello";
   document.querySelector(".image-bigger").src = tipsy.image;
   console.log("her kommer objektet inde i objektet" + tipsy.ingredients);
