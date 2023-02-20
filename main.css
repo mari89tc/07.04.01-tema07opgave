@@ -46,7 +46,7 @@ header {
 }
 .image-bigger {
   background-color: rgb(254, 244, 244);
-  height: 600px;
+  height: 800px;
   width: 400px;
   border-radius: 5%;
   justify-content: center;
@@ -129,6 +129,7 @@ h2 {
   border-bottom: 1px solid;
   color: #874e39;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -242,6 +243,7 @@ p {
   font-family: "Quicksand", sans-serif;
 }
 
+/* drinks.html styling  */
 .drinksstruktur ul {
   list-style: none;
   padding: 0;
@@ -250,8 +252,11 @@ p {
 .drinksstruktur ul li {
   display: block;
   padding: 8px 40px 8px 0;
-  border-bottom: 1px solid #ccc;
-  align-items: left;
+}
+
+.drinksstruktur .spacing-list {
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1em;
 }
 span {
   float: left;
@@ -261,13 +266,12 @@ span {
   font-size: 50px;
   font-family: "Amatic SC";
   color: #874e39;
-  margin-left: 5em;
+  text-align: center;
   margin-bottom: 0;
-  margin-right: 5em;
 }
 
 .drinksstruktur h5 {
-  margin-left: 0em;
+  margin-top: 1em;
 }
 
 .drinksstruktur h1 {
@@ -277,11 +281,14 @@ span {
   margin-left: 1.5em;
   text-align: center;
   margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 .drinksstruktur p {
+  text-align: center;
   font-family: "Quicksand", sans-serif;
   max-width: 65ch;
-  margin: 3rem;
-  margin-top: 1rem;
+  margin-left: 6rem;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
