@@ -19,7 +19,7 @@ function showProducts(tipsy) {
   document.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
   document.querySelector(".recipe").textContent = tipsy.recipe + " hello";
   document.querySelector(".image-bigger").src = tipsy.image;
-  console.log("her kommer objektet " + tipsy.ingredients);
+  console.log("her kommer objektet inde i objektet" + tipsy.ingredients);
   fordeling(tipsy.ingredients);
 }
 
