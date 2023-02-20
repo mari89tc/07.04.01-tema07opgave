@@ -93,7 +93,7 @@ nav:hover {
 }
 
 .frontimage {
-  background-image: url("/img_forside/img_forside1.webp");
+  background-image: url("img_forside/img_forside1.webp");
   object-fit: cover;
   height: 500px;
   width: 1200px;
