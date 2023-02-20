@@ -7,35 +7,6 @@ fetch("https://tipsy-7609.restdb.io/rest/tipsy/" + id, {
     "x-apikey": "63ee14b6478852088da68351",
   },
 })
-  //   .then((response) => response.json())
-  //   .then((data) => showProducts(data));
-
-  // function showProducts(tipsy) {
-  //   console.log("tipsy " + tipsy);
-  //   document.querySelector(".drinkname").textContent = tipsy.name;
-  //   document.querySelector(".liquor").textContent = tipsy.liquor;
-  //   document.querySelector(".taste").textContent = tipsy.taste;
-  //   document.querySelector(".strenght").textContent = "Styrke : " + tipsy.strenght + "/5";
-  //   document.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
-  //   document.querySelector(".recipe").textContent = tipsy.recipe + " hello";
-  //   document.querySelector(".image").src = tipsy.image;
-
-  //   function ingredienser() {
-  //     ingredienser.forEach();
-
-  //     function ingrediens(ing) {
-  //       const template = document.querySelector(".allingrediens").content;
-
-  //       const copy = template.cloneNode(true);
-
-  //       copy.querySelector(".ingrediens").textContent = ingrediens.ingrediens;
-  //       copy.querySelector(".amount").textContent = ingrediens.amount + ingrediens.type;
-
-  //       document.querySelector("ul").appendChild(copy);
-  //     }
-  //   }
-  // }
-
   .then((response) => response.json())
   .then((data) => showProducts(data));
 
@@ -46,28 +17,60 @@ function showProducts(tipsy) {
   document.querySelector(".taste").textContent = tipsy.taste;
   document.querySelector(".strenght").textContent = "Styrke : " + tipsy.strenght + "/5";
   document.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
-  document.querySelector(".recipe").textContent = tipsy.recipe;
+  document.querySelector(".recipe").textContent = tipsy.recipe + " hello";
   document.querySelector(".image-bigger").src = tipsy.image;
-
-  // if (Array.isArray(tipsy.ingredienser)) {
-  //   ingredienser(tipsy.ingredienser);
-  // } else {
-  //   console.error("Ingredients is not an array.");
-  // }
+  console.log("her kommer objektet " + tipsy.ingredients);
+  fordeling(tipsy.ingredients);
 }
 
-// function ingredienser(ingredienser) {
-//   ingredienser.forEach(ingredients);
+function fordeling(ingredients) {
+  console.log("fordeling" + ingredients);
+  ingredients.forEach(ingrediens);
+}
+
+function ingrediens(ing) {
+  const template = document.querySelector("template").content;
+
+  const copy = template.cloneNode(true);
+
+  copy.querySelector(".ingrediens").textContent = ing.ingrediens;
+  copy.querySelector(".amount").textContent = ing.amount + ing.type;
+
+  document.querySelector("ul").appendChild(copy);
+}
+
+//   .then((response) => response.json())
+//   .then((data) => showProducts(data));
+
+// function showProducts(tipsy) {
+//   console.log("tipsy " + tipsy);
+//   document.querySelector(".drinkname").textContent = tipsy.name;
+//   document.querySelector(".liquor").textContent = tipsy.liquor;
+//   document.querySelector(".taste").textContent = tipsy.taste;
+//   document.querySelector(".strenght").textContent = "Styrke : " + tipsy.strenght + "/5";
+//   document.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
+//   document.querySelector(".recipe").textContent = tipsy.recipe;
+//   document.querySelector(".image-bigger").src = tipsy.image;
+
+//   // if (Array.isArray(tipsy.ingredienser)) {
+//   //   ingredienser(tipsy.ingredienser);
+//   // } else {
+//   //   console.error("Ingredients is not an array.");
+//   // }
 // }
 
-// function ingredients(ing) {
-//   console.log("nu kan vi vise alle ingredients");
-//   const template = document.querySelector("template").content;
+// // function ingredienser(ingredienser) {
+// //   ingredienser.forEach(ingredients);
+// // }
 
-//   const copy = template.cloneNode(true);
+// // function ingredients(ing) {
+// //   console.log("nu kan vi vise alle ingredients");
+// //   const template = document.querySelector("template").content;
 
-//   copy.querySelector(".ingrediens").textContent = ing.ingredient;
-//   copy.querySelector(".amount").textContent = ing.amount + ing.type;
+// //   const copy = template.cloneNode(true);
 
-//   document.querySelector("main").appendChild(copy);
-// }
+// //   copy.querySelector(".ingrediens").textContent = ing.ingredient;
+// //   copy.querySelector(".amount").textContent = ing.amount + ing.type;
+
+// //   document.querySelector("main").appendChild(copy);
+// // }
