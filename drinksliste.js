@@ -18,7 +18,7 @@ function showProduct(tipsy) {
 
   copy.querySelector(".drinkname").textContent = tipsy.name;
   copy.querySelector(".strenght").textContent = "Styrke : " + tipsy.strenght + "/5";
-  copy.querySelector(".difficulty").textContent = "Sværighedsgrad : " + tipsy.difficulty + "/5";
+  copy.querySelector(".difficulty").textContent = "Sværhedsgrad : " + tipsy.difficulty + "/5";
 
   copy.querySelector(".image").src = tipsy.image;
 
