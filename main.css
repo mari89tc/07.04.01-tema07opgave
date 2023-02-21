@@ -291,3 +291,8 @@ span {
   margin-top: 0;
   margin-bottom: 1em;
 }
+
+.drinksstruktur .grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
