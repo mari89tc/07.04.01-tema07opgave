@@ -95,7 +95,9 @@ nav:hover {
 .frontimage {
   object-fit: cover;
   height: 500px;
+  max-height: 100%;
   width: 1200px;
+  max-width: 100%;
   margin: 2rem;
 }
 
@@ -129,21 +131,38 @@ h2 {
   color: #874e39;
 }
 
+.monthlytips {
+  font-size: 50px;
+  font-family: "Amatic SC", cursive;
+  border-bottom: 1px solid;
+  color: #874e39;
+  width: 100%;
+  text-align: center;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  margin-bottom: 0;
+}
+
+.ups-align {
+  width: 100%;
+}
+
+.usp-text {
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  color: #a1b795;
+  text-align: center;
+  font-weight: 600;
+  margin: 0.5;
+  max-width: 45ch;
+  line-height: 1.5;
+}
+
 a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   font-family: "Quicksand", sans-serif;
-}
-
-.drinksgrid1_2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: #f8f6b1;
-}
-
-.drinksstruktur {
-  display: block;
 }
 
 /* Form */
@@ -179,60 +198,6 @@ h3 {
 form {
   width: 180%;
 }
-@media (min-width: 700px) {
-  input[type="text"],
-  input[type="tel"] {
-    border: none;
-    background-color: #fdfcd2;
-    border: 0.5px solid lightgrey;
-    border-radius: 40px;
-    width: 50%;
-    padding: 12px;
-  }
-
-  .grid_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    margin: 30px;
-    margin-top: 40px;
-    align-items: stretch;
-  }
-  #besked {
-    border: 0.5px solid lightgrey;
-    background-color: #fdfcd2;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    width: 50%;
-    border-radius: 40px;
-  }
-
-  label {
-    color: #a1b795;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    text-decoration: none;
-  }
-  form button {
-    background-color: #fdfcd2;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 15px;
-    border: 0.5px solid lightgrey;
-    border-radius: 40px;
-    color: #a1b795;
-    margin-top: 10px;
-    width: 50%;
-  }
-}
-input[type="text"]:focus,
-input[type="tel"]:focus,
-#besked:focus {
-  border: 3px solid #a1b795;
-  outline: none;
-}
 
 h1 {
   font-family: "Amatic SC", cursive;
@@ -242,7 +207,23 @@ p {
   font-family: "Quicksand", sans-serif;
 }
 
+/* @media (min-width: 800px) {
+  .drinksgrid1_2 {
+    display: block;
+  }
+} */
+
 /* drinks.html styling  */
+
+.drinksstruktur {
+  display: block;
+}
+.drinksgrid1_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f8f6b1;
+}
+
 .drinksstruktur ul {
   list-style: none;
   padding: 0;
@@ -277,22 +258,130 @@ span {
   font-size: 30px;
   font-family: "Amatic SC";
   color: #874e39;
-  margin-left: 1.5em;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 0;
 }
 
-.drinksstruktur p {
-  text-align: center;
+.drinksstruktur .recipe {
+  font-size: 15px;
   font-family: "Quicksand", sans-serif;
-  max-width: 65ch;
-  margin-left: 6rem;
-  margin-top: 0;
-  margin-bottom: 1em;
+  color: #874e39;
+  text-align: left;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+.read-more {
+  font-family: "Quicksand", sans-serif;
+  font-size: larger;
+  border-bottom: solid;
 }
 
 .drinksstruktur .grid1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+input[type="text"],
+input[type="tel"] {
+  border: none;
+  background-color: #fdfcd2;
+  border: 0.5px solid lightgrey;
+  border-radius: 40px;
+  width: 50%;
+  padding: 12px;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin: 30px;
+  margin-top: 40px;
+  align-items: stretch;
+}
+
+#besked {
+  border: 0.5px solid lightgrey;
+  background-color: #fdfcd2;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 50%;
+  border-radius: 40px;
+}
+
+label {
+  color: #a1b795;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+}
+form button {
+  background-color: #fdfcd2;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px;
+  border: 0.5px solid lightgrey;
+  border-radius: 40px;
+  color: #a1b795;
+  margin-top: 10px;
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  #besked:focus {
+    border: 3px solid #a1b795;
+    outline: none;
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+    margin: 30px;
+    margin-top: 40px;
+    align-items: stretch;
+  }
+  .drinksgrid1_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  footer .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    gap: 0rem;
+    margin-top: 0rem;
+  }
+  .mobilefooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    margin-right: 5em;
+  }
+  .mobilefooter li a {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: #a1b795;
+  }
+
+  .mobilehidden {
+    text-align: center;
+  }
+  /* .mobilehidden {
+    visibility: hidden;
+  } */
 }

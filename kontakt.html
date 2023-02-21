@@ -1,79 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <meta name="robots" content="noindex" />
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html"><img src="logo/Tegnebræt4.svg" alt="Logo" class="logo" /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <meta name="robots" content="noindex" />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img src="logo/Tegnebræt4.svg" alt="Logo" class="logo" /></a>
+      <div>
+        <a id="aheader" href="drinksliste.html">Drinks</a>
+        <a id="aheader" href="kontakt.html">Kontakt os</a>
+      </div>
+    </nav>
+  </header>
+  <section class="grid_1_1">
+    <div class="om_os">
+      <h3>Hvem er vi?</h3>
+      <p>
+        Tipsy er skabt i kærlighed til smagfulde og farverige drinks, der forsøder tilværelsen. Vores mål er at
+        inspirere dig når du går i gang med shakeren, så dine drinks når et nyt niveau. Vi arbejder hele tiden på at
+        forbedre vores indhold, så
+        alle idéer og ønsker til opskrifter, tages imod med stor glæde.
+      </p>
+    </div>
+    <div class="form_kontakt">
+      <h3>Hvad er din yndlingsdrink?</h3>
+      <form name="kontakt">
         <div>
-          <a id="aheader" href="drinksliste.html">Drinks</a>
-          <a id="aheader" href="kontakt.html">Kontakt os</a>
+          <label for="navn"><br />Navn<br /></label>
+          <input id="navn" type="text" name="fname" />
         </div>
-      </nav>
-    </header>
-    <section class="grid_1_1">
-      <div class="om_os">
-        <h3>Hvem er vi?</h3>
-        <p>
-          Tipsy er skabt i kærlighed til smagfulde og farverige drinks, der forsøder tilværelsen. Vores mål er at inspirere dig når du går i gang med shakeren, så dine drinks når et nyt niveau. Vi arbejder hele tiden på at forbedre vores indhold, så
-          alle idéer og ønsker til opskrifter, tages imod med stor glæde.
+        <div>
+          <label for="tel"><br />Telefonnummer<br /></label>
+          <input id="tel" type="tel" name="Tlf. nummer" />
+        </div>
+        <div>
+          <label for="email"><br />Email<br /></label>
+          <input id="email" type="text" name="email" />
+        </div>
+        <div>
+          <label>
+            <br />Kom med forslag til din yndlingsdrink her<br />
+            <textarea id="besked" name="besked" rows="10" cols="30"></textarea>
+          </label>
+        </div>
+        <button class="button">Indsend</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="kontakt">
+        <h3>Kontakt os</h3>
+        <ul class="mobilefooter">
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="drinksliste.html">Facebook</a></li>
+          <li><a href="drinksliste.html">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="mobilehidden">
+        <h3>Tipsy</h3>
+        <p>Tipsy er din fortrukne drinksguide, når festen står for døren eller når hverdagen skal spices op. Her
+          finder du opskrifter lækre drinks, så du er sikker på at score point hos dine gæster. Hvis du har forslag
+          eller ønsker til indhold på siden, er du mere end velkommen til at skrive til os via vores kontaktformular.
         </p>
       </div>
-      <div class="form_kontakt">
-        <h3>Hvad er din yndlingsdrink?</h3>
-        <form name="kontakt">
-          <div>
-            <label for="navn"><br />Navn<br /></label>
-            <input id="navn" type="text" name="fname" />
-          </div>
-          <div>
-            <label for="tel"><br />Telefonnummer<br /></label>
-            <input id="tel" type="tel" name="Tlf. nummer" />
-          </div>
-          <div>
-            <label for="email"><br />Email<br /></label>
-            <input id="email" type="text" name="email" />
-          </div>
-          <div>
-            <label>
-              <br />Kom med forslag til din yndlingsdrink her<br />
-              <textarea id="besked" name="besked" rows="10" cols="30"></textarea>
-            </label>
-          </div>
-          <button class="button">Indsend</button>
-        </form>
-      </div>
-    </section>
-    <footer>
-      <div class="footer">
-        <div class="kontakt">
-          <h3>Kontakt os</h3>
-          <ul>
-            <li><a href="drinksliste.html">Skriv til os</a></li>
-            <li><a href="drinksliste.html">Facebook</a></li>
-            <li><a href="drinksliste.html">Instagram</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Tipsy</h3>
-          <p>
-            Tipsy er din fortrukne drinksguide, når festen står for døren eller når hverdagen skal spices op. Her finder du opskrifter lækre drinks, så du er sikker på at score point hos dine gæster. Hvis du har forslag eller ønsker til indhold på
-            siden, er du mere end velkommen til at skrive til os via vores kontaktformular.
-          </p>
-        </div>
-      </div>
-      <h5>All rights reserved</h5>
-      <h5>2023</h5>
-    </footer>
-  </body>
+    </div>
+    <h5>All rights reserved</h5>
+    <h5>2023</h5>
+  </footer>
+</body>
+
 </html>
